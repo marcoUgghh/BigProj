@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(100, 20, 116, 0.8), rgba(35, 69, 205, 0.8)), url(https://techrevieweg.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-31-at-4.25.38-PM.jpeg);
+}
+h1 {
+    text-align: center;
+    color: white;
+    /* background-image: linear-gradient(rgba(133, 26, 154, 0.8), rgba(35, 69, 205, 0.8)); */
+    padding-bottom: 20px;
+}
+
+.about-school {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(100, 20, 116, 0.8), rgba(35, 69, 205, 0.8)), url(https://techrevieweg.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-31-at-4.25.38-PM.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+p, ul, li {
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+    font-size: x-large;
+}
+
+strong {
+    padding-top: 10px;
+    font-size: x-large;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 30px;
+    word-spacing: 2px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.logo span {
+    color: #867ad6;
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background: #b405a0;
+    transition: .8s;
+}
+
+.logo:hover:after {
+    width: 100%;
+}
+
+.links {
+    flex: 1;
+    text-align: right;
+}
+
+.links ul li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.links ul li a {
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.links ul li a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background: #b405a0;
+    transition: .8s;
+}
+
+.links ul li a:hover:after {
+    width: 100%;
+}
+
+
+footer {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    padding: 50px 100px;
+    background-image: linear-gradient(rgba(90, 14, 96, 0.8), rgba(91, 6, 79, 0.8)), url(https://tsfe.com/img/telecommunication/bg.jpg);
+}
+
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .container .footer h2 {
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer .container .footer p {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+footer .container .footer p:hover {
+    cursor: pointer;
+}
+
+footer .container .socicon {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+
+footer .container .socicon li {
+    list-style: none;
+}
+
+footer .container .socicon li a {
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    background-color: #ffffff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer .container .socicon li a i {
+    color: #b405a0;
+    font-size: 20px;
+}
+
+footer .container .socicon li a:hover {
+    background-color: #000;
+}
+
+footer .container .socicon li a i:hover {
+    cursor: pointer;
+    color: #b405a0;
+}
+
+footer .container .footer li {
+    list-style: none;
+}
+
+footer .container .footer li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.footercopyrights h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footercopyrights p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media (max-width:991px) {
+    footer {
+        padding: 40px;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .text p {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        word-spacing: 2px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    nav a {
+        padding-left: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .footercopyrights {
+        padding: 20px 40px 30px;
+    }
+
+    .footercopyrights p {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .footercopyrights h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        font-size: 12px;
+    }
+
+    button {
+        border-radius: 22px;
+        background-color: #b405a0;
+        border: none;
+        padding: 10px;
+        margin: 0px 5px;
+    }
+
+    button a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background-color: #281890;
+    }
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    footer .container .footer h2 {
+        font-weight: 400;
+        color: #000;
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    footer .container .footer p {
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    footer .container .footer li a {
+        font-size: 25px;
+        text-decoration: none;
+        color: #ffffff;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    footer .container .footer h2 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #000;
+        position: relative;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 700px;
+    }
+
+    footer {
+        padding: 10px;
+        margin: 0;
+    }
+}

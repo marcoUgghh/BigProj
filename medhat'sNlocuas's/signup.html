@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Ahmed Medhat">
+    <meta name="keywords" content="WE School For Applied Technology , Applied Technology Schools , Telecom Egypt, Technical Schools">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-UP Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(90, 14, 96, 0.8), rgba(91, 6, 79, 0.7)), url(https://tsfe.com/img/telecommunication/bg.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .div {
+            background-image: linear-gradient(rgba(90, 14, 96, 0.8), rgba(91, 6, 79, 0.9));
+            max-width: 700px;
+            width: 100%;
+            padding: 25px 50px; 
+            border-radius: 5px;
+        }
+
+        .div .header {
+            font-weight: bold;
+            font-size: 25px;
+            position: relative;
+        }
+
+        .div .header::before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 30px;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(90, 14, 96, 0.8), rgba(91, 6, 79, 0.6));
+        }
+
+        .div form .brief {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .div form .brief .inputs {
+            width: calc(100% / 2 - 20px);  
+            margin: 20px 0 10px 0;
+        }
+
+        .div form .brief .inputs label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .div form .brief .inputs input{
+            height: 35px;
+            width: 100%;
+            padding-left: 10px;
+            border: 1px solid rgba(90, 14, 96, 0.8);
+            border-radius: 5px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .div form .gender .title{
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .div form .gender .select {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            width: 25%;
+        }
+
+        .div form .submit {
+            display: flex;
+        }
+
+        .div form .submit button {
+            margin-right: 10px;
+            background-color: violet;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .div form .submit button:hover {
+            background-color:  rgba(90, 14, 96, 1);
+            cursor: pointer;
+        }
+
+        .div form .submit button a {
+            padding: 15px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .div form .submit button a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="header">Registration Form</div>
+        <form action="#">
+            <div class="brief">
+                <div class="inputs">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name..." required>
+                </div>
+                <div class="inputs">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username..." required>
+                </div>
+                <div class="inputs">
+                    <label for="em">Email</label>
+                    <input type="email" id="em" placeholder="Enter your email@domain.com" required>
+                </div>
+                <div class="inputs">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="inputs">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" placeholder="Enter your password" required>
+                </div>
+                <div class="inputs">
+                    <label for="conipass">Coniform Password</label>
+                    <input type="password" id="conipass" placeholder="Coniform your passowrd" required>
+                </div>
+            </div>
+            <div class="gender">
+                <span class="title">Gender</span>
+                <div class="select">
+                    <label for="male">Male</label>
+                    <input type="radio" required id="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" required>
+                </div>
+            </div>
+            <div class="submit">
+                <button><a href="#">Register Now</a></button>
+                <button><a href="WEappliedtechschool.html">Back</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
